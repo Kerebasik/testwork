@@ -1,11 +1,23 @@
-import logo from './../assets/logo.png'
+import logo from '../../components/assets/logo.png'
+import './Footer.style.scss'
+import {NavigationList} from "../../constants/navigate";
 
 
 const Footer = () => {
   return (
-    <footer>
-      <img src={logo} alt={'Company logo'}/>
-      <p>fdfsdfsdf</p>
+    <footer className={'footer'}>
+        <div className={'footer__content'}>
+            <img src={logo} alt={'Company logo'}/>
+            <div className={'footer__list'}>
+                <ul>
+                    {
+                        NavigationList.map((item, index)=>{
+                            return <li key={item.name+index}><a href={item.link}>{item.name}</a></li>
+                        })
+                    }
+                </ul>
+            </div>
+        </div>
     </footer>
   );
 };

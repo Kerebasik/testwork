@@ -1,0 +1,72 @@
+@import "src/_mixins.scss";
+
+.feedback{
+  height: 500px;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__content{
+    @include contentLimiter;
+  }
+  &__scroll{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    &__point_selected{
+      width: 124px;
+      border-top: 2px solid #F1C32D;
+      background-color: #F1C32D; /* For browsers that do not support gradients */
+      background-image: linear-gradient(to right, #E7B000 , #F1C32D);
+    }
+    &__point{
+      width: 44px;
+      border-top: 2px solid #F4F4F4;
+    }
+  }
+
+  h3{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin-bottom: 32px;
+
+  }
+  &__table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+
+    img{
+      height: 80px;
+      width: 80px;
+    }
+
+    &__left{
+      flex: 1 1 50%;
+      border: 1px solid #F7BD01;
+      border-radius: 8px;
+      padding: 24px 47px 24px 24px;
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    &__right{
+      flex: 1 1 50%;
+      border: 1px solid #F7BD01;
+      border-radius: 8px;
+      padding: 24px 47px 24px 24px;
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+  }
+}

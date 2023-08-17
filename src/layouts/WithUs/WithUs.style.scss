@@ -1,0 +1,87 @@
+@import "src/_mixins.scss";
+
+.with-us{
+  background-image: url("../../components/assets/withUsBG.jpg");
+  &__content{
+    align-items: center;
+    justify-content: center;
+    height: 836px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    &__tables{
+      display: flex;
+      flex-direction: row;
+      gap:24px
+    }
+
+    @include contentLimiter;
+    &__title__table{
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .table{
+        &__left{
+          flex: 0 0 657px;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          h3{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 67px;
+            letter-spacing: 0.25px;
+            text-align: left;
+
+          }
+          p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0.25px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table{
+  background-color: #FFFFFF;
+  border: 1px solid #F7BD01;
+  padding: 24px;
+  flex: 0 0 33%;
+  max-width: 443px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  &__header{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    &__title{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0.25px;
+      text-align: left;
+      max-width: 272px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__content{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+
+  }
+}

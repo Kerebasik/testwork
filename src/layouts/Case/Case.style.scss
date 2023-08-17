@@ -1,2 +1,98 @@
+@import "src/_mixins.scss";
 
+.case{
+  height: 794px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content{
+    @include contentLimiter;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
 
+    &__data{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      &__left{
+        flex: 0 0 50%;
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        &__header{
+          display: flex;
+          flex-direction: column;
+          gap:24px;
+          h3{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            letter-spacing: 0.25px;
+            text-align: left;
+          }
+
+          p{
+            max-width: 609px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0.25px;
+            text-align: left;
+          }
+
+        }
+      }
+
+      &__right{
+        flex: 0 0 50%;
+      }
+    }
+
+    &__menu{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap:32px;
+      width: 100%;
+      p{
+        white-space: nowrap;
+      }
+      &__item{
+        &_selected{
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+        }
+        transition-property: color;
+        transition-duration: 0.5s;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+
+      }
+      .line{
+        width: 180px;
+        border-bottom: 2px solid #F7BD01;
+      }
+    }
+  }
+}
+
+@media (hover: hover) {
+  .case__content__menu__item:hover{
+    color: #F1C32D;
+  }
+}
+
+@media (hover: none){
+  .case__content__menu__item:active{
+    color: #F1C32D;
+  }
+}

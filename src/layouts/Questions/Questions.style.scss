@@ -1,0 +1,164 @@
+@import "src/_mixins.scss";
+
+@mixin listContact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.table__content{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  &__title{
+    h6{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0.25px;
+      text-align: left;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.25px;
+      text-align: left;
+    }
+
+  }
+
+  &__feedback{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+
+  }
+}
+
+.question-form{
+  background-color: #F4F4F4;
+  height: 589px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include contentLimiter;
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      flex: 0 0 910px;
+    }
+    &__right{
+      flex:  0 0 270px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+}
+
+.form{
+  &__header{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+
+  &__subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    text-align: left;
+
+  }
+
+  &__inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .credentials{
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+}
+
+.contacts{
+  &__title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  &__data{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.25px;
+      text-align: left;
+
+    }
+    &__number{
+      @include listContact;
+    }
+    &__mail{
+      @include listContact;
+    }
+    &__location{
+      @include listContact
+    }
+
+  }
+}
+
+.work-schedule{
+  display: flex;
+  max-width: 215px;
+  flex-direction: column;
+  gap: 32px;
+  &__title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+  &__data{
+    p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.25px;
+      text-align: end;
+
+    }
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}

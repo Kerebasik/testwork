@@ -1,0 +1,43 @@
+@import "src/_mixins.scss";
+
+.our-work{
+  background-image: url("../../components/assets/bg_our_work.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: flex;
+  align-items: center;
+  height: 775px;
+  &__content{
+    @include contentLimiter;
+    &__header{
+      width: 664px;
+      display: flex;
+      flex-direction: column;
+      gap:32px;
+      padding-left: 48px;
+      &__title{
+        h3{
+          font-size: 72px;
+          font-weight: 700;
+          line-height: 77px;
+          letter-spacing: 0.25px;
+          text-align: left;
+          color:rgba(255, 255, 255, 1)
+        }
+      }
+
+      &__subtitle{
+        p{
+          width: 548px;
+          color:rgba(255, 255, 255, 1);
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 34px;
+          letter-spacing: 0.25px;
+          text-align: left;
+
+        }
+      }
+    }
+  }
+}

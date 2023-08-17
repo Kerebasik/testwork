@@ -1,0 +1,59 @@
+
+@mixin basicStyleForButton{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  padding: 16px 24px;
+  transition-property: color, background-color, background-image;
+  transition-duration: 2s;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.16);
+
+}
+
+.primary{
+  @include basicStyleForButton;
+  color: #1F1800;
+  background-color: #F1C32D; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #E7B000 , #F1C32D);
+}
+
+.secondary{
+  color: #FFFFFF;
+  @include basicStyleForButton;
+  background-color:#1A1A1A;
+  background-image: linear-gradient(to right, #000000 , #1A1A1A);
+}
+
+.error{
+  border:1px solid red;
+}
+
+@media (hover: hover) {
+  .primary:hover{
+    color: #FFFFFF;
+    background-color:#1A1A1A;
+    background-image: linear-gradient(to right, #000000 , #1A1A1A);
+  }
+  .secondary:hover{
+    color: #1F1800;
+    background-color: #F1C32D; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #E7B000 , #F1C32D);
+    }
+}
+
+@media (hover: none) {
+  .primary:active{
+    color: #FFFFFF;
+    background-color:#1A1A1A;
+    background-image: linear-gradient(to right, #000000 , #1A1A1A);
+  }
+  .secondary:hover{
+    color: #1F1800;
+    background-color: #F1C32D; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #E7B000 , #F1C32D);
+  }
+}

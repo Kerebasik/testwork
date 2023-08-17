@@ -1,0 +1,9 @@
+@import "src/_mixins.scss";
+
+.icon{
+  width: 56px;
+  height: 56px;
+  padding: 11.2px;
+  border-radius: 16px;
+  @include gradientBG
+}

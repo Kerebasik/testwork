@@ -1,0 +1,15 @@
+@mixin contentLimiter{
+  max-width: 1377px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin inputError{
+  border: 1px solid red;
+}
+
+@mixin gradientBG{
+  background-color: #F1C32D; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #E7B000 , #F1C32D);
+}
+
