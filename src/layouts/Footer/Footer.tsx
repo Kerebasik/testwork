@@ -1,6 +1,7 @@
 import logo from '../../components/assets/logo.png'
 import './Footer.style.scss'
 import {NavigationList} from "../../constants/navigate";
+import {NavLink} from "react-router-dom";
 
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
                 <ul>
                     {
                         NavigationList.map((item, index)=>{
-                            return <li key={item.name+index}><a href={item.link}>{item.name}</a></li>
+                            return <li className={'list__item'} key={item.name+index}><NavLink to={item.link}>{item.name}</NavLink></li>
                         })
                     }
                 </ul>

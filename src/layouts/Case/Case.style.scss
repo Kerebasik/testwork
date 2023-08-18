@@ -1,7 +1,7 @@
 @import "src/_mixins.scss";
 
 .case{
-  height: 794px;
+  min-height: 794px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
       justify-content: center;
 
       &__left{
-        flex: 0 0 50%;
+        flex: 0 1 50%;
         display: flex;
         gap: 32px;
         flex-direction: column;
@@ -47,7 +47,10 @@
       }
 
       &__right{
-        flex: 0 0 50%;
+        flex: 0 1 50%;
+        img{
+          width: 100%;
+        }
       }
     }
 
@@ -94,5 +97,56 @@
 @media (hover: none){
   .case__content__menu__item:active{
     color: #F1C32D;
+  }
+}
+
+@media(max-width: 1439px) {
+  .case{
+    &__content{
+      &__menu{
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media(max-width: 1210px){
+  .case__content__menu{
+    .line{
+      display: none;
+    }
+    p{
+      white-space: normal;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .case{
+    &__content{
+      &__data{
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+
+@media(width < 752px){
+  .case__content__menu{
+    gap:8px;
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+@media (width < 426px){
+  .case__content__menu{
+    gap:5px;
+    p{
+      font-size: 10px;
+    }
   }
 }

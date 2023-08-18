@@ -1,7 +1,8 @@
 @import "src/_mixins.scss";
 
+
 .feedback{
-  height: 500px;
+  min-height: 500px;
   background: none;
   display: flex;
   align-items: center;
@@ -33,7 +34,7 @@
     font-weight: 700;
     line-height: 67px;
     letter-spacing: 0.25px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 32px;
 
   }
@@ -67,6 +68,43 @@
       flex-direction: row;
       gap: 16px;
     }
+    .table__content{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      &__title{
+        h6{
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 29px;
+          letter-spacing: 0.25px;
+          text-align: left;
+        }
+        p{
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.25px;
+          text-align: left;
+        }
 
+      }
+
+      &__feedback{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        text-align: left;
+
+      }
+    }
+
+  }
+}
+
+@media (width < 732px) {
+  .feedback__table{
+    flex-direction: column;
   }
 }

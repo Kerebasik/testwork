@@ -6,7 +6,7 @@
   background-position-x: center;
   display: flex;
   align-items: center;
-  height: 775px;
+  min-height: 775px;
   &__content{
     @include contentLimiter;
     &__header{
@@ -17,6 +17,7 @@
       padding-left: 48px;
       &__title{
         h3{
+          max-width: 100%;
           font-size: 72px;
           font-weight: 700;
           line-height: 77px;
@@ -28,7 +29,7 @@
 
       &__subtitle{
         p{
-          width: 548px;
+          max-width: 548px;
           color:rgba(255, 255, 255, 1);
           font-size: 24px;
           font-weight: 400;
@@ -38,6 +39,31 @@
 
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-work{
+    &__content{
+      &__header{
+        padding: 0 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media(width< 582px){
+  .our-work__content__header__title{
+    h3{
+      font-size: 48px;
+    }
+
+  }
+  .our-work__content__header__subtitle{
+    p{
+      font-size: 18px;
     }
   }
 }

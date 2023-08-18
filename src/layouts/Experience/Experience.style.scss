@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 419px;
+  min-height: 419px;
   background-color: #F1C32D; /* For browsers that do not support gradients */
   background-image: linear-gradient(to right, #E7B000 , #F1C32D);
   &__content{
@@ -21,7 +21,7 @@
       font-weight: 700;
       line-height: 67px;
       letter-spacing: 0.25px;
-      text-align: left;
+      text-align: center;
     }
   }
 

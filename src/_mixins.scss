@@ -2,6 +2,9 @@
   max-width: 1377px;
   margin: 0 auto;
   width: 100%;
+  @media (max-width: 1439px) {
+    padding: 20px;
+  }
 }
 
 @mixin inputError{

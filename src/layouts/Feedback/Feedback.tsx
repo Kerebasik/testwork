@@ -7,7 +7,7 @@ const Feedback = ()=>{
         <div className={'feedback'}>
             <div className={'feedback__content'}>
                 <div>
-                    <h3>Що говорять про нас ті хто вже з нами</h3>
+                    <h3 className={'feedback__content__title'}>Що говорять про нас ті хто вже з нами</h3>
                     <div className={'feedback__table'}>
                         <div className={'feedback__table__left'}>
                             <img src={img_left} alt={'Anna`s'}/>
