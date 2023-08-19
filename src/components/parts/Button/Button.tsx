@@ -26,7 +26,7 @@ const Button = ({
   secondary = false,
 }: ButtonProps) => {
   return (
-    <div>
+    <div className={'button'}>
       <button
         type={type}
         onClick={onClick}

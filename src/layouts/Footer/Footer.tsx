@@ -1,6 +1,6 @@
 import logo from '../../components/assets/logo.png';
 import './Footer.style.scss';
-import { NavigationList } from '../../constants/navigate';
+import { Navigation } from '../../components/parts/Navigation/Navigation';
 
 const Footer = () => {
   return (
@@ -8,15 +8,7 @@ const Footer = () => {
       <div className={'footer__content'}>
         <img src={logo} alt={'Company logo'} />
         <div className={'footer__list'}>
-          <ul>
-            {NavigationList.map((item, index) => {
-              return (
-                <li className={'list__item'} key={item.name + index}>
-                  <a href={item.link}>{item.name}</a>
-                </li>
-              );
-            })}
-          </ul>
+          <Navigation secondary />
         </div>
       </div>
     </footer>

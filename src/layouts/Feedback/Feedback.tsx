@@ -4,7 +4,7 @@ import './Feedback.style.scss';
 
 const Feedback = () => {
   return (
-    <div className={'feedback'} id={'feedback'}>
+    <div className={'feedback'}>
       <div className={'feedback__content'}>
         <div>
           <h3 className={'feedback__content__title'}>

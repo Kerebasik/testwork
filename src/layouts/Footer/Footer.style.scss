@@ -14,48 +14,12 @@
   }
 
   &__list{
-    ul{
-      li{
-        font-size: 20px;
-        font-weight: 500;
-        a{
-          color: #FFFFFF;
-          transition-duration: 0.5s;
-          transition-property: color;
-        }
-      }
-      display: flex;
-      flex-direction: row;
-      gap: 32px;
-    }
-  }
-}
 
-
-@media(hover: hover){
-  .footer__list{
-    .list__item:hover{
-      a{
-        color: #E7B000;
-      }
-    }
-  }
-}
-
-@media (hover: none) {
-  .footer__list{
-    .list__item:active{
-      a{
-        color: #E7B000;
-      }
-    }
   }
 }
 
 @media(max-width: 832px){
   .footer__list{
-    .list__item{
       display: none;
-    }
   }
 }

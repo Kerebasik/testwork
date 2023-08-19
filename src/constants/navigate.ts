@@ -2,7 +2,7 @@ import type { NavList } from '../types/lists';
 
 const NavigationList: Array<NavList> = [
   {
-    link: `#our-work`,
+    link: `#with-us`,
     name: 'Про нас',
   },
   {
@@ -10,7 +10,7 @@ const NavigationList: Array<NavList> = [
     name: 'Наші проєкти',
   },
   {
-    link: `#feedback`,
+    link: `#experience`,
     name: 'Приєднуйтесь до нас',
   },
   {

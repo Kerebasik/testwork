@@ -24,7 +24,12 @@ const Navigation = ({
     <ul className={'navigation'}>
       {NavigationList.map((item, index) => (
         <li className={'navigation__item'} key={item.name + index}>
-          <a className={`navigation__item__link ${primary && 'navigation__item__link_primary'} ${secondary && 'navigation__item__link_secondary'}`} href={item.link}>
+          <a
+            className={`navigation__item__link ${
+              primary && 'navigation__item__link_primary'
+            } ${secondary && 'navigation__item__link_secondary'}`}
+            href={item.link}
+          >
             {item.name}
           </a>
         </li>

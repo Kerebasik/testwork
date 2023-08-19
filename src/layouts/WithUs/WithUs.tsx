@@ -34,7 +34,7 @@ const tables: Array<TableContent> = [
 
 const WithUs = () => {
   return (
-    <div className={'with-us'}>
+    <div className={'with-us'} id={'with-us'}>
       <div className={'with-us__content'}>
         <div className={'with-us__content__title__table'}>
           <div className={'table__left'}>

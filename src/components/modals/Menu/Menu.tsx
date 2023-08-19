@@ -13,15 +13,17 @@ const Menu = ({ isOpen, onClose }: MenuProps) => {
   return (
     <div className='modal-overlay'>
       <div className='modal'>
-        <nav>
-          <ul className={'modal__navigation__list'}>
-            {NavigationList.map((item) => (
-              <li key={item.name} onClick={onClose}>
-                <a href={item.link}>{item.name}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div>
+          <nav>
+            <ul className={'modal__navigation__list'}>
+              {NavigationList.map((item) => (
+                <li key={item.name} onClick={onClose}>
+                  <a href={item.link}>{item.name}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
         <Button text={'Закрити'} onClick={onClose} primary />
       </div>
     </div>

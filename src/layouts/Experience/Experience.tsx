@@ -4,7 +4,7 @@ import './Experience.style.scss';
 
 const Experience = () => {
   return (
-    <div className={'experience'}>
+    <div className={'experience'} id={'experience'}>
       <div className={'experience__content'}>
         <div className={'experience__title'}>
           <h3>У нас є 15 років досвіду у будівництві</h3>

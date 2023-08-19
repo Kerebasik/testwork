@@ -24,6 +24,7 @@
   &__navigation__list{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 18px;
     li{
       font-size: 20px;
