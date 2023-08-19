@@ -1,0 +1,44 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+
+  &__navigation__list{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    li{
+      font-size: 20px;
+      font-weight: 500;
+      a{
+        color: #1F1800;
+        transition-property: color;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
