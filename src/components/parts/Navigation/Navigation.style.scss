@@ -1,0 +1,49 @@
+.navigation{
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+    &__item{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.25px;
+      text-align: left;
+
+      &__link{
+        transition-duration: 0.5s;
+        transition-property: color;
+        &_secondary{
+          color: #FFFFFF;
+        }
+        &_primary{
+          color: #1F1800;
+        }
+      }
+    }
+}
+
+
+@media (hover: hover) {
+  .navigation{
+    &__item{
+      &__link:hover{
+        color: #E7B000;
+      }
+    }
+  }
+}
+@media (hover: none) {
+  .navigation{
+    &__item{
+      &__link:active{
+        color: #E7B000;
+      }
+    }
+  }
+}
+
+@media (width < 832px) {
+  .navigation{
+    flex-direction: column;
+  }
+}
