@@ -1,11 +1,19 @@
 @import 'src/_mixins.scss';
 
-input{
+
+.input-field{
   width: 100%;
-  padding: 18px 16px;
-  border-radius: 4px;
+  .error{
+    @include inputError
+  }
+  input{
+    width: 100%;
+    padding: 18px 16px;
+    border-radius: 4px;
+  }
+  &__error-alert{
+    color: red;
+    margin: 5px 0;
+  }
 }
 
-.error{
-  @include inputError
-}

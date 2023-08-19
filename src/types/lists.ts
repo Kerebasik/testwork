@@ -1,6 +1,6 @@
-type NavList ={
-    link:string,
-    name:string
-}
+type NavList = {
+  link: string;
+  name: string;
+};
 
-export type {NavList}
+export type { NavList };

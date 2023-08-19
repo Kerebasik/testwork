@@ -1,7 +1,7 @@
 type QuestionForm = {
-    name:string,
-    phone:string,
-    question:string
-}
+  name: string;
+  phone: string;
+  question: string;
+};
 
-export type {QuestionForm}
+export type { QuestionForm };
